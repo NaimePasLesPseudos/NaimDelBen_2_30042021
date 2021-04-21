@@ -1,0 +1,145 @@
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+h1{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-size: 9.5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: white;
+    width: 815px;
+    align-content : center;
+    margin: auto;
+}
+
+header{
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: #efefef;
+}
+
+#recherche{
+    background-color: white;
+    width: 100%;
+}
+
+.btn{
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid grey;
+    padding: 5px 5px 5px 5px;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+
+.btn1{
+    color: white;
+    background-color: blue;
+}
+
+.btn2{
+    
+}
+
+.btn3{
+    
+}
+
+.btn4{
+    
+}
+
+.btn5{
+
+}
+
+#hebergement{
+    background-color: #efefef;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.flex-hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#hebergement article{
+    width: 145px;
+    height: 118px;
+    background-color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    margin: 0px 10px 17px 10px;
+}
+
+#hebergement article h1{
+    margin-bottom: 10px ;
+}
+
+#populaire{
+    background-color: #efefef;
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+}
+
+#populaire article{
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    margin: 0px 10px 17px 10px;
+}
+
+#activites{
+    background-color: white;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: #efefef;
+}
+
+footer ul{
+
+}
+
+footer li{
+    font-size: 9px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer li:first-child{
+    font-weight: bold;
+}
