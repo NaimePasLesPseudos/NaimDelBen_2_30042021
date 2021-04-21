@@ -4,6 +4,7 @@ h1{
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 p{
@@ -11,9 +12,32 @@ p{
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+
+}
+
+a:hover {
+
+}
+
+.box {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0000006b;
+    background-color: white;
+    border: solid 3px white;
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.box:hover{
+    box-shadow: 5px 5px 10px black;
+}
+
 body{
     background-color: white;
-    width: 815px;
+    width: 100%;
+    max-width: 850px;
     align-content : center;
     margin: auto;
 }
@@ -30,6 +54,7 @@ nav {
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 section{
@@ -39,6 +64,22 @@ section{
 #recherche{
     background-color: white;
     width: 100%;
+    margin-bottom: 20px;
+}
+
+form{
+    height: 30px;
+}
+
+#zone-recherche{
+    height: 100%;
+}
+
+.zone-texte{
+    width: 198px;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
 }
 
 .btn{
@@ -49,6 +90,8 @@ section{
     border-radius: 15px;
     border: 2px solid grey;
     padding: 5px 5px 5px 5px;
+    height: 100%;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -58,6 +101,8 @@ section{
 .btn1{
     color: white;
     background-color: blue;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .btn2{
@@ -76,63 +121,94 @@ section{
 
 }
 
-#hebergement{
+.fond{
     background-color: #efefef;
-    width: 70%;
-    margin: 20px;
+    border-radius: 15px;
     padding: 20px;
+}
+
+.hebergement{
+    width: 520px;
 }
 
 .flex-hebergement{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
-#hebergement article{
+.hebergement article{
     width: 145px;
     height: 118px;
-    background-color: white;
-    border: solid 3px white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-    margin: 0px 10px 17px 10px;
 }
 
-#hebergement article h1{
-    margin-bottom: 10px ;
+.populaire{
+    width: 250px;
 }
 
-#populaire{
-    background-color: #efefef;
-    width: 20%;
-    margin: 20px;
-    padding: 20px;
+.flex-populaire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: column;
 }
 
-#populaire article{
+.populaire article{
     width: 100%;
     height: 85px;
-    background-color: white;
-    border: solid 3px white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-    margin: 0px 10px 17px 10px;
 }
 
-#activites{
+.activites{
     background-color: white;
     width: 100%;
-    margin: 20px;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.flex-activites{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 265px;
+}
+
+.flex-activites article{
+    border-radius: 15px;
+    width: 180px;
+    height: 50%;
+}
+
+.flex-activites article:nth-child(3n+1){
+    height: 265px;
+}
+
+.flex-activites article:nth-child(2){
+    height: 100px;
+}
+
+.flex-activites article:nth-child(3){
+    height: 50px;
+}
+
+.flex-activites article:nth-child(5){
+    height: 70px;
+}
+
+.flex-activites article:nth-child(6){
+    height: 80px;
+}
+
 
 footer{
     background-color: #efefef;
 }
 
 footer ul{
-
 }
 
 footer li{
