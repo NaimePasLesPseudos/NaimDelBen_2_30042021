@@ -2,6 +2,7 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 
 *{
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 h1{
@@ -46,7 +47,7 @@ a:hover {
 body{
     background-color: white;
     width: 100%;
-    max-width: 850px;
+    max-width: 1440px;
     align-content : center;
     margin: auto;
 }
@@ -164,7 +165,7 @@ form{
 }
 
 .hebergement{
-    width: 520px;
+    width: 880px;
 }
 
 .flex-hebergement{
@@ -187,7 +188,7 @@ form{
 }
 
 .populaire{
-    width: 250px;
+    width: 420px;
 }
 
 .flex-populaire{
