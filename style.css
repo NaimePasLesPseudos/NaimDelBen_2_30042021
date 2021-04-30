@@ -1,7 +1,15 @@
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 *{
+/* La police du site est Raleway. */
     font-family: 'Raleway', sans-serif;
+}
+
+:root{
+/* Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2. */
+    --color-charte-blue:#0065FC;
+    --color-charte-light:#DEEBFF;
+    --color-charte-grey:#F2F2F2;
 }
 
 h1{
@@ -11,6 +19,12 @@ h1{
 }
 
 h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+h3{
     font-size: 1em;
     font-weight: bold;
 }
@@ -23,15 +37,33 @@ a {
     font-size: 1em;
     font-weight: bold;
     padding-bottom: 5px;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:focus {
+    color: black;
 }
 
 a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
 }
 
 .box {
     border-radius: 10px;
     background-color: white;
-    border: solid 3px white;
+    border: solid 5px white;
     font-size: 11px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -90,7 +122,7 @@ main{
 }
 
 section{
-    background-color: #efefef;
+    background-color: var(--color-charte-grey);
 }
 
 #recherche{
@@ -190,12 +222,27 @@ form{
 .hebergement img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 100%;
+    height: 114px;
 }
 
 .description {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
+    padding-left: 10px;
+    height: 69px;
+    line-height: 2;
+}
+
+.description  p{
+    font-size: 0.9em;
+    font-weight:normal;
+}
+
+.notes .stars{
+    color: var(--color-charte-grey);
+}
+
+.notes .bleu{
+    color: var(--color-charte-blue);
 }
 
 .populaire{
