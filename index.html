@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Reservia</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./ressources/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./ressources/fontawesome-free/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
@@ -15,11 +15,11 @@
         </div>
         <nav>
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
             <ul>
-                <li>S'inscrire</li>
+                <li><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -35,15 +35,15 @@
             </form>
             <div id="filtres">
                 <h2>Filtres</h2>
-                <button type="button" class="btn btn2">Économique</button>
-                <button type="button" class="btn btn3">Familial</button>
-                <button type="button" class="btn btn4">Romantique</button>
-                <button type="button" class="btn btn5">Animaux autorisés</button>
+                <button type="button" class="btn btn2"><i class="fas fa-money-bill-wave bleu"></i> Économique</button>
+                <button type="button" class="btn btn3"><i class="fas fa-child bleu"></i> Familial</button>
+                <button type="button" class="btn btn4"><i class="fas fa-heart bleu"></i> Romantique</button>
+                <button type="button" class="btn btn5"><i class="fas fa-dog bleu"></i> Animaux autorisés</button>
             </div>
-            <p><em>Plus de 500 logements sont disponibles dans cette ville</em></p>
+            <p><i class="fas fa-info"></i><em>Plus de 500 logements sont disponibles dans cette ville</em></p>
         </section>
 
-        <section class="hebergement fond">
+        <section id="hebergement" class="hebergement fond">
             <h2>Hébergements à Marseille</h2>
             <div class="flex-hebergement">
                 <a href="">
@@ -56,11 +56,11 @@
                             <p>Nuit à partir de 90€</p> 
                             <div class="notes">
                                 <div class="stars">
-                                    <i class="fa fa-star bleu"></i>
-                                    <i class="fa fa-star bleu"></i>
-                                    <i class="fa fa-star bleu"></i>
-                                    <i class="fa fa-star bleu"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class="fas fa-star bleu"></i>
+                                    <i class="fas fa-star bleu"></i>
+                                    <i class="fas fa-star bleu"></i>
+                                    <i class="fas fa-star bleu"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
             </div>
         </section>
         
-        <section class="activites">
+        <section id="activites" class="activites">
             <h1>Activités à Marseille</h1>
             <div class="flex-activites">
                 <a href="">
