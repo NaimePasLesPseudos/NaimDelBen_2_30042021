@@ -10,16 +10,16 @@
 </head>
 <body class="">
     <header class="pageHead">
-        <div class="pageHead-logo">
+        <div class="pageHead__logo">
             <img src="./ressources/img/reservia_logo.svg" alt="logo Reservia">
         </div>
         <nav class="primaryNav">
-            <ul class="primaryNav-list">
-                <li class="primaryNav-item bleu"><a href="#hebergement">Hébergements</a></li>
-                <li class="primaryNav-item"><a href="#activites">Activités</a></li>
+            <ul class="primaryNav__list">
+                <li class="primaryNav__item primaryNav__item--active"><a href="#hebergement" class="bleu">Hébergements</a></li>
+                <li class="primaryNav__item"><a href="#activites">Activités</a></li>
             </ul>
-            <ul class="primaryNav-list">
-                <li class="primaryNav-item"><a href="#">S'inscrire</a></li>
+            <ul class="primaryNav__list">
+                <li class="primaryNav__item"><a href="#" class="bleu">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -27,21 +27,39 @@
         <section id="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form>  
-                <div id="zone-recherche">
-                    <i class="fas fa-map-marker-alt pin"></i>
-                    <input type="search" placeholder="Marseille, France" class="zone-texte">
-                    <button type="button" class="btn btn1">Rechercher</button>
-                </div>
+            <form class="searchArea">
+                    <button class="searchArea__pin"><i class="fas fa-map-marker-alt pin"></i></button>
+                    <input type="search" placeholder="Marseille, France" class="searchArea__text">
+                    <button type="button" class="searchAreah__btn">Rechercher</button>
             </form>
-            <div id="filtres">
-                <h2>Filtres</h2>
-                <button type="button" class="btn btn2"><i class="fas fa-money-bill-wave bleu"></i>Économique</button>
-                <button type="button" class="btn btn3"><i class="fas fa-child bleu"></i>Familial</button>
-                <button type="button" class="btn btn4"><i class="fas fa-heart bleu"></i>Romantique</button>
-                <button type="button" class="btn btn5"><i class="fas fa-dog bleu"></i>Animaux autorisés</button>
+            <div class="filters">
+                <h2 class="filtersTitle">Filtres</h2>
+                <div class="filtersButton">
+                    <div class="filtersButton__bubble">
+                        <i class="fas fa-money-bill-wave bleu"></i>
+                    </div>
+                    <div class="filtersButton__text">Économique</div>
+                </div>
+                <div class="filtersButton">
+                    <div class="filtersButton__bubble">
+                        <i class="fas fa-child bleu"></i>
+                    </div>
+                    <div class="filtersButton__text">Familial</div>
+                </div>
+                <div class="filtersButton">
+                    <div class="filtersButton__bubble">
+                        <i class="fas fa-heart bleu"></i>
+                    </div>
+                    <div class="filtersButton__text">Romantique</div>
+                </div>
+                <div class="filtersButton">
+                    <div class="filtersButton__bubble">
+                        <i class="fas fa-dog bleu"></i>
+                    </div>
+                    <div class="filtersButton__text">Animaux autorisés</div>
+                </div>
             </div>
-            <p><i class="fas fa-info"></i><em>Plus de 500 logements sont disponibles dans cette ville</em></p>
+            <p class="searchResult"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <section id="hebergement" class="hebergement fond">
