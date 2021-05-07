@@ -12,19 +12,28 @@
 </head>
 <body class="">
     <header class="pageHead">
+        <img class="pageHead__logo" src="./ressources/img/reservia_logo.svg" alt="logo Reservia">
+        <div class="pageHead__nav">
+            <a class="pageHead__navItem" href="#hebergement" class="bleu">Hébergements</a>
+            <a class="pageHead__navItem" href="#activites">Activités</a>
+        </div>
+        <a class="pageHead__itemRegister" href="#">S'inscrire</a>
+    </header>
+
+    <!-- <header class="pageHead">
         <div class="pageHead__logo">
             <img src="./ressources/img/reservia_logo.svg" alt="logo Reservia">
         </div>
         <nav class="primaryNav">
-            <ul class="primaryNav__list">
-                <li class="primaryNav__item primaryNav__item--active"><a href="#hebergement" class="bleu">Hébergements</a></li>
+            <ul class="primaryNav__list primaryNav__listNav">
+                <li class="primaryNav__item"><a href="#hebergement" class="bleu">Hébergements</a></li>
                 <li class="primaryNav__item"><a href="#activites">Activités</a></li>
             </ul>
-            <ul class="primaryNav__list">
+            <ul class="primaryNav__list primaryNav__listRegister">
                 <li class="primaryNav__item"><a href="#" class="bleu">S'inscrire</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     <main class="">
         <section id="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -32,7 +41,8 @@
             <form class="searchArea">
                     <button class="searchArea__pin"><i class="fas fa-map-marker-alt pin"></i></button>
                     <input type="search" placeholder="Marseille, France" class="searchArea__text">
-                    <button type="button" class="searchAreah__btn">Rechercher</button>
+                    <button type="button" class="searchAreah__btn searchAreah__btn--word">Rechercher</button>
+                    <button type="button" class="searchAreah__btn searchAreah__btn--icon"><i class="fas fa-search"></i></button>
             </form>
             <div class="filters">
                 <h2 class="filtersTitle">Filtres</h2>
@@ -44,13 +54,13 @@
                 </div>
                 <div class="filtersButton">
                     <div class="filtersButton__bubble">
-                        <i class="fas fa-child fa-spin bleu"></i>
+                        <i class="fas fa-child bleu"></i>
                     </div>
                     <div class="filtersButton__text">Familial</div>
                 </div>
                 <div class="filtersButton">
                     <div class="filtersButton__bubble">
-                        <i class="fas fa-heart fa-pulse bleu"></i>
+                        <i class="fas fa-heart bleu"></i>
                     </div>
                     <div class="filtersButton__text">Romantique</div>
                 </div>
