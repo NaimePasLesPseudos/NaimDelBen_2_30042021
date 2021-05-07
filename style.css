@@ -70,7 +70,7 @@ section{ background-color: var(--color-charte-grey); }
 img{ object-fit: cover; }
 
 @media screen and (max-width: 767px) {
-    body{
+    main{
         padding: 0px;
     }
 }
@@ -668,7 +668,10 @@ footer li:first-child{
 }
 
 @media screen and (max-width: 767px){
-    footer{
+    .footerList{
+        width: 100%;
+        padding: 50px 18px;
         display: block;
+        margin: 0;
     }
 }
