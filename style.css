@@ -546,6 +546,7 @@ img{ object-fit: cover; }
     .popular{
         width: auto;
         margin-bottom: 40px;
+        border-radius: 0;
     }
 
     .popularResult__article{
