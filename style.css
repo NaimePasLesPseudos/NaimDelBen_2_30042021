@@ -79,11 +79,15 @@ img{ object-fit: cover; }
 /** ----- HEADER ----- **/
 
 .pageHead{
-    display: flex;    
+    max-width: 1440px;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: flex-end;
     height: 82px;
+    margin: auto;
     margin-bottom: 25px;
 }
 
@@ -117,6 +121,7 @@ img{ object-fit: cover; }
 
 @media screen and (max-width: 767px){
     .pageHead{
+        width: 100%;
         padding: 0px;
         height: 119px;
         align-content: space-between;
@@ -646,7 +651,8 @@ footer{
 }
 
 .footerList{
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     padding: 50px;
     display: flex;
     margin-left: auto;
