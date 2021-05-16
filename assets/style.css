@@ -13,6 +13,7 @@
 
 /* naming BEM :
 
+
 .blockName
 .blockName__elem
 .blockName--mod
@@ -48,15 +49,15 @@ main{
     padding: 0px 50px 0px 50px;
 }
 
-h1{ font-size: 1.375em; font-weight: bold;  margin-bottom: 17px; }
+h1{ font-size: 22px; font-weight: bold;  margin-bottom: 17px; }
 
-h2{ font-size: 1em;     font-weight: bold;  margin-bottom: 23px; }
+h2{ font-size: 22px; font-weight: bold;  margin-bottom: 23px; }
 
-h3{ font-size: 1em;     font-weight: bold; }
+h3{ font-size: 16px; font-weight: bold; margin-bottom: 2px; }
 
-p{  font-size: 1em; }
+p{  font-size: 14px; font-weight: normal; }
 
-a{  font-size: 1em; font-weight: bold; text-decoration: none; }
+a{  font-size: 14px; font-weight: bold; text-decoration: none; }
 
 a:link, a:visited, a:focus, a:hover, a:active{ color: black; }
 
@@ -69,6 +70,9 @@ img{        object-fit: cover; }
 @media screen and (max-width: 767px) {
     main{
         padding: 0px;
+    }
+    h3{
+        font-size: 14px;
     }
 }
 
@@ -221,9 +225,8 @@ input[type="search"]{
     font-weight: bold;
     color: white;
     border: 0px;
-    border-radius: 25px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: var(--color-charte-blue);
     transition: color 300ms ease-in-out, color 300ms ease-in-out;
 }
@@ -408,6 +411,12 @@ input[type="search"]{
     width: 420px;
 }
 
+.resultTitle__popular{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .result__thumbnail {
     display: flex;
     flex-wrap: nowrap;
@@ -422,7 +431,7 @@ input[type="search"]{
 }
 
 .result__thumbnail:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(209, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .result__thumbnail--hosting{
@@ -445,31 +454,18 @@ input[type="search"]{
     height: 114px;
 }
 
-.result__description {
-    height: 69px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10px;
-}
-
-.hostingResult__price{
-    font-size: 0.9em;
-    font-weight:normal;
-}
-
-.popularTitle{
-    width: auto;
-    display: flex;
-    flex-direction: row ;
-    align-content: space-between;
-}
-
 .popularResult__img{
     width: 127px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    margin-right: 15px;
+}
+
+.result__description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0px 8px 10px;
 }
 
 .popularResult__description{
@@ -479,8 +475,14 @@ input[type="search"]{
     justify-content: space-between;
 }
 
-.hosting__rating .hosting__ratingStars{
+.result__descriptionTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.result__descriptionRating {
     color: var(--color-charte-grey);
+    justify-self: flex-end;
 }
 
 @media screen and (max-width: 1400px) {
@@ -543,15 +545,15 @@ input[type="search"]{
 }
 
 .activityResult__article{
-    position: relative;
     max-width: 302px;
     width: calc(23%);
+    display: inline-block;
+    position: relative;
     margin: 0;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    display: inline-block;
 }
 
 .activityResult__article:hover{
@@ -578,7 +580,10 @@ input[type="search"]{
     border-top-right-radius: 20px;
 }
 
-.titre-activite{
+.activityResult_title{
+    height: 56px;
+    display: flex;
+    align-items: center;
     margin-left: 19px;
 }
 
@@ -619,25 +624,24 @@ footer{
 }
 
 .footerList{
-    /* il sert à rien */
-
     padding: 2px 50px;
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 footer ul{
-    width: 100%;
+    width: 446px;
     line-height: 2em;
 }
 
-footer li{
-    font-size: 1.125em;
+footer li a{
+    font-weight: normal;
 }
 
-footer li:first-child{
+.footerList__title{
+    font-size: 18px !important;
     font-weight: bold;
     margin-bottom: 10px;
 }
