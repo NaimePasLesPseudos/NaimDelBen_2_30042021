@@ -49,9 +49,9 @@ main{
     padding: 0px 50px 0px 50px;
 }
 
-h1{ font-size: 22px; font-weight: bold;  margin-bottom: 17px; }
+h1{ font-size: 22px; font-weight: bold; margin-bottom: 17px; }
 
-h2{ font-size: 22px; font-weight: bold;  margin-bottom: 23px; }
+h2{ font-size: 22px; font-weight: bold; margin-bottom: 23px; }
 
 h3{ font-size: 16px; font-weight: bold; margin-bottom: 2px; }
 
@@ -70,12 +70,17 @@ section{    background-color: var(--color-charte-grey); }
 img{        object-fit: cover; }
 
 @media screen and (max-width: 767px) {
-    main{
-        padding: 0px;
-    }
-    h3{
-        font-size: 14px;
-    }
+    main{ padding: 0px; }
+
+    h1{ font-size: 20px; font-weight: bold; margin-bottom: 14px; }
+
+    h2{ font-size: 20px; font-weight: bold; margin-bottom: 22px; }
+    
+    h3{ font-size: 14px; font-weight: bold; margin-bottom: 2px; }
+    
+    p{  font-size: 14px; font-weight: normal; }
+    
+    a{  font-size: 15px; font-weight: bold; text-decoration: none; }
 }
 
 /* COMPONENTS */
@@ -118,10 +123,6 @@ img{        object-fit: cover; }
     padding: 0px 35px;
 }
 
-@media screen and (max-width: 1400px) {
-
-}
-
 @media screen and (max-width: 767px){
     .pageHead{
         width: 100%;
@@ -158,13 +159,11 @@ img{        object-fit: cover; }
         border-bottom: 2px solid var(--color-charte-blue);
         padding-top: 0px;
         padding-bottom: 22px;
-
     }
 
     .pageHead__itemRegister{
         padding-right: 18px;
     }
-
 }
 
 /** --------------- SEARCH --------------- **/
@@ -313,10 +312,6 @@ input[type="search"]{
     margin-right: 12px;
     font-size: 14px;
     vertical-align: middle;
-}
-
-@media screen and (max-width: 1400px) {
-
 }
 
 @media screen and (max-width: 767px) {
@@ -520,11 +515,15 @@ input[type="search"]{
 
 @media screen and (max-width: 767px){
     .result{
+        height: 100%;
         flex-wrap: wrap;
+        padding: 22px 18px;
     }
 
     .result--hosting{
         background-color: white;
+        flex-direction: row;
+        height: 1220px;
     }
 
     .result__thumbnail--hosting{
@@ -533,12 +532,23 @@ input[type="search"]{
     }
 
     .result--popular{
+        flex-direction: row;
         margin-bottom: 40px;
         border-radius: 0;
+        height: 522px;
+    }
+
+    .resultTitle__popular{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-bottom: 3px;
     }
 
     .result__thumbnail--popular{
         width: 100%;
+        height: 130px;
     }
 }
 
