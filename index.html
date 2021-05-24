@@ -13,10 +13,10 @@
 <body> 
     <header class="pageHead">
         <img class="pageHead__logo" src="./assets/img/reservia_logo.svg" alt="logo Reservia">
-        <div class="pageHead__nav">
+        <nav class="pageHead__nav">
             <a class="pageHead__navItem" href="#hebergement">Hébergements</a>
             <a class="pageHead__navItem" href="#activites">Activités</a>
-        </div>
+        </nav>
         <a class="pageHead__itemRegister" href="#">S'inscrire</a>
     </header>
     <main>
@@ -26,9 +26,9 @@
             <form class="searchArea">
                     <div class="searchArea__pin"><i class="fas fa-map-marker-alt"></i></div>
                     <input type="search" placeholder="Marseille, France" class="searchArea__text">
-                    <button type="button" class="searchAreah__btn">
+                    <button type="button" class="searchArea__btn">
                         <i class="fas fa-search"></i>
-                        <div>Rechercher</div>
+                        <span>Rechercher</span>
                     </button>
             </form>
             <div class="filters">
@@ -67,7 +67,7 @@
             <section class="result result--hosting">
                 <h2>Hébergements à Marseille</h2>
                 <div class="result__list">
-                    <a class="result__thumbnail result__thumbnail--hosting" href="">
+                    <a class="thumbnailEffect result__thumbnail result__thumbnail--hosting" href="">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/auberge-la-cannebiere-marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--hosting">
+                    <a href="" class=" thumbnailEffect result__thumbnail result__thumbnail--hosting">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/hotel-du-port-fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--hosting">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--hosting">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/hotel-les-mouettes-reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--hosting">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--hosting">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/hotel-de-la-mer-annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--hosting">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--hosting">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/auberge-le-panier-nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--hosting">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--hosting">
                         <img class="hostingResult__img" src="./assets/img/hebergements/small/chez-amina-febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -173,7 +173,7 @@
                     <h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
                 </div>
                 <div class="result__list">
-                    <a href="" class="result__thumbnail result__thumbnail--popular">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--popular">
                         <img class="popularResult__img" src="./assets/img/hebergements/small/le-soleil-du-matin-emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -189,7 +189,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--popular">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--popular">
                         <img class="popularResult__img" src="./assets/img/hebergements/small/au-coeur-de-leau-aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="result__thumbnail result__thumbnail--popular">
+                    <a href="" class="thumbnailEffect result__thumbnail result__thumbnail--popular">
                         <img class="popularResult__img" src="./assets/img/hebergements/small/tout-bleu-et-blanc-febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                         <div class="result__description">
                             <div class="result__descriptionTitle">
@@ -228,37 +228,37 @@
         <section id="activites" class="activity">
             <h2>Activités à Marseille</h2>
             <div class="activityResult">
-                <a href="" class="activityResult__article activityResult__article1">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article1">
                     <img class="activityResult__img" src="./assets/img/activites/medium/vieux-port-reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Vieux Port</h3>
                     </div>
                 </a>
-                <a href="" class="activityResult__article activityResult__article2">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article2">
                     <img class="activityResult__img" src="./assets/img/activites/medium/fort-de-pomeques-paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Fort des Pomègues</h3>
                     </div>
                 </a>
-                <a href="" class="activityResult__article activityResult__article3">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article3">
                     <img class="activityResult__img" src="./assets/img/activites/medium/ile-de-frioul-kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Îles du Frioul</h3>
                     </div>
                 </a>
-                <a href="" class="activityResult__article activityResult__article4">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article4">
                     <img class="activityResult__img" src="./assets/img/activites/medium/calanques-kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Parc National des Calanques</h3>
                     </div>
                 </a>
-                <a href="" class="activityResult__article activityResult__article5">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article5">
                     <img class="activityResult__img" src="./assets/img/activites/medium/notre-dame-de-la-garde-florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
-                <a href="" class="activityResult__article activityResult__article6">
+                <a href="" class="thumbnailEffect activityResult__article activityResult__article6">
                     <img class="activityResult__img" src="./assets/img/activites/medium/parc-longchamp-lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                     <div class="activityResult_title">
                         <h3>Parc Longchamp</h3>
