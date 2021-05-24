@@ -505,7 +505,11 @@ input[type="search"]{
     margin-top: 44px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1416px) {
+    #hebergement{
+        flex-flow: column-reverse wrap;
+    }
+
     .result--hosting{
         width: 100%;
     }
@@ -515,7 +519,6 @@ input[type="search"]{
     }
 
     .result--popular{
-        order: -1;
         width: 100%;
         margin-bottom: 15px;
     }
