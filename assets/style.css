@@ -49,7 +49,7 @@ main{
     padding: 0px 50px 0px 50px;
 }
 
-h1{ font-size: 22px; font-weight: bold; margin-bottom: 17px; }
+h1{ font-size: 22px; font-weight: bold; margin-bottom: 10px; }
 
 h2{ font-size: 22px; font-weight: bold; margin-bottom: 23px; }
 
@@ -59,7 +59,7 @@ p{  font-size: 16px; font-weight: normal; }
 
 a{  font-size: 16px; font-weight: bold; text-decoration: none; }
 
-a:hover{ color: var(--color-charte-blue);}
+a:hover{ color: var(--color-charte-blue); text-decoration: underline; }
 
 a:link, a:visited, a:focus, a:active{ color: black; }
 
@@ -69,7 +69,7 @@ section{    background-color: var(--color-charte-grey); }
 
 img{        object-fit: cover; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
     main{ padding: 0px; }
 
     h1{ font-size: 20px; font-weight: bold; margin-bottom: 14px; }
@@ -123,7 +123,7 @@ img{        object-fit: cover; }
     padding: 0px 35px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 950px){
     .pageHead{
         width: 100%;
         padding: 0px;
@@ -179,10 +179,8 @@ img{        object-fit: cover; }
 .searchArea{
     display: flex;
     height: 51px;
-    width: auto;
     margin-top: 20px;
 }
-
 
 .searchArea__pin{
     display: flex;
@@ -198,7 +196,7 @@ img{        object-fit: cover; }
 }
 
 .searchArea__text{
-    width: 198px;
+    width: 200px;
     height: 100%;
     padding: 0;
     margin: 0px -5px 0px -5px;
@@ -236,7 +234,7 @@ input[type="search"]{
     color: black;
 }
 
-.searchAreah__btn--icon{
+.searchAreah__btn > i {
     display: none;
 }
 
@@ -255,7 +253,6 @@ input[type="search"]{
 .filtersButton{
     cursor: pointer;
     height: 50px;
-    width: auto;
     font-size: 18px;
     font-weight: bold;
     border-width: 2px 2px 2px 0px;
@@ -265,7 +262,7 @@ input[type="search"]{
     border-bottom-right-radius: 25px;
     margin-left: 39px;
     margin-right: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     padding: 0px;
     display: flex;
     align-items: center;
@@ -314,7 +311,7 @@ input[type="search"]{
     vertical-align: middle;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
     #recherche{
         padding: 0px 18px;
     }
@@ -344,11 +341,11 @@ input[type="search"]{
         border-radius: 15px;
     }
 
-    .searchAreah__btn--word{
+    .searchAreah__btn > span {
         display: none;
     }
     
-    .searchAreah__btn--icon{
+    .searchAreah__btn > i {
         display: initial;
         width: 46px;
         height: 46px;
@@ -415,8 +412,8 @@ input[type="search"]{
 }
 
 .resultTitle__popular{
-    width: auto;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     font-size: 22px;
     margin-bottom: 3px;
@@ -513,7 +510,7 @@ input[type="search"]{
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 950px){
     .result{
         height: 100%;
         flex-wrap: wrap;
@@ -523,12 +520,12 @@ input[type="search"]{
     .result--hosting{
         background-color: white;
         flex-direction: row;
-        height: 1220px;
     }
 
     .result__thumbnail--hosting{
         width: 100%;
         height: 199px;
+        margin-bottom: 20px;
     }
 
     .result--popular{
@@ -539,7 +536,6 @@ input[type="search"]{
     }
 
     .resultTitle__popular{
-        width: auto;
         display: flex;
         justify-content: space-between;
         font-size: 20px;
@@ -614,11 +610,7 @@ input[type="search"]{
     margin-left: 19px;
 }
 
-@media screen and (max-width: 1400px){
-
-}
-
-@media screen and (max-width: 767px){
+@media screen and (max-width: 950px){
     .activity{
         background-color: white;
         width: 100%;
@@ -673,7 +665,7 @@ footer li a{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 950px){
     .footerList{
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -681,5 +673,28 @@ footer li a{
         padding: 18px;
         margin: 0;
     }
-
 }
+
+@media screen and (max-width: 1073px) {
+    .filtersButton {
+        margin-bottom: 10px;
+    }
+}
+
+/**
+X-Small 	None 	<576px => pas de media query
+Small 	sm 	≥576px => min-width => 576px
+Medium 	md 	≥950px => min-width => 950px
+Large 	lg 	≥992px => min-width => 992px
+Extra large 	xl 	≥1200px => min-width => 1200px
+Extra extra large 	xxl 	≥1400px => min-width => 1400px
+ */
+
+/*
+Logique Naïm : 
+maquette Desktop > 1440px > Desktop first
+breakpoint < 1400 
+breakpoint < 767
+maquette mobile > 338px
+*/
+ 
